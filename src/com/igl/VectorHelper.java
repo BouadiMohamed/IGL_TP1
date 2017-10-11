@@ -44,5 +44,15 @@ public class VectorHelper {
                }
                return w;
      }
+    public static int[] maxAndMin(int[] v)
+    {
+        int res[] = new int[2];
+        res[0] = res[1] = v[0];
+        for(int i = 1; i < v.length; i++)
+        {
+            if(v[i] > res[0]) res[0] = v[i];
+            if(v[i] < res[1]) res[1] = v[i];
+        }       return res;
 
+    }
 }
