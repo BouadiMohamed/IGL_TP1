@@ -34,4 +34,15 @@ public class VectorHelper {
             return tab;
 
         }
+    public static int[] sum(int[] v, int[] u) throws DifferentDimensionException
+     {
+               if(v.length != u.length) throw new DifferentDimensionException();
+               int[] w = new int[v.length];
+               for(int i = 0; i < w.length; i++)
+               {
+                    w[i] = v[i] + u[i];
+               }
+               return w;
+     }
+
 }
