@@ -49,7 +49,7 @@ public class VectorHelper {
 
     public static void apply(int v[], Function<Integer, Integer> m)
     {
-               for(int i = 0; i < v.length; i++)
+               for(int i = 0; i < v.length - 1 ; i++)
                {
                                v[i] = m.apply(v[i]);
               }
