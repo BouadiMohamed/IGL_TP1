@@ -1,5 +1,7 @@
 package com.igl;
 
+import java.util.function.Function;
+
 /**
  * Created by Bouadi Mohammed on 11/10/2017.
  */
@@ -19,7 +21,7 @@ public class VectorHelper {
                         tab[i+1]=j;
                     }
                 }
-            } while(permut_count ==0);
+            } while(permut_count !=0);
             return tab;
         }
 
@@ -44,5 +46,21 @@ public class VectorHelper {
                }
                return w;
      }
+
+    public static void apply(int v[], Function<Integer, Integer> m)
+    {
+               for(int i = 0; i < v.length; i++)
+               {
+                               v[i] = m.apply(v[i]);
+              }
+              }
+
+    public static void apply2(int v[], Function<Integer, Integer> m)
+    {
+        for(int i = 0; i < v.length; i++)
+        {
+            v[i] = m.apply(v[i]);
+        }
+    }
 
 }
