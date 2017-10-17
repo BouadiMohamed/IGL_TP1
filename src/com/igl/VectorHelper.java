@@ -55,7 +55,7 @@ public class VectorHelper {
               }
               }
 
-    public static int[] maxAndMin(int[] v)
+    public static int[] maxAndMin( int[] v)
      {
                 int res[] = new int[2];
                 res[0] = res[1] = v[0];
