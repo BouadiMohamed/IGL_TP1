@@ -47,13 +47,12 @@ public class VectorHelper {
                return w;
      }
 
-    public static void apply(int v[], Function<Integer, Integer> m)
-    {
-               for(int i = 0; i < v.length - 1 ; i++)
-               {
-                               v[i] = m.apply(v[i]);
-              }
-              }
+    public static int[] apply(int v[],int n) {
+        for (int i = 0; i < v.length; i++) {
+            v[i] = v[i] * n;
+        }
+        return v;
+    }
 
     public static int[] maxAndMin( int[] v)
      {
