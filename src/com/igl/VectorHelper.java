@@ -3,11 +3,13 @@ package com.igl;
 import java.util.function.Function;
 
 /**
- * Created by Bouadi Mohammed on 11/10/2017.
+ * Created by Bouadi Mohamed on 11/10/2017.
  */
-public class VectorHelper {
 
-        public static int[] trier(int[] tab){
+public class VectorHelper {
+        public static int[] trier(int[] tab)
+        {
+
             int i=0;
             int j=0;
             int permut_count =0;
@@ -26,6 +28,7 @@ public class VectorHelper {
         }
 
         public static int[] inverser (int[] tab){
+
             int temp=0;
 
             for (int i=0;i<tab.length/2;i++){
