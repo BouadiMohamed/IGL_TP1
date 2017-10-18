@@ -4,8 +4,10 @@ import junit.framework.TestCase;
 
 /**
  * Created by Bouadi Mohammed on 18/10/2017.
+ * Date : 11/10/2017
  */
 public class VectorHelperTest extends TestCase {
+
     public static final int TAB1[] = {31,54,8,64,89,102,35,45,1,25,-5};
     public static final int REVERSED_TAB1[] = {-5,25,1,45,35,102,89,64,8,54,31};
     public static final int TAB1_MULTI_2[] = {62,108,16,128,178,204,70,90,2,50,-10};
